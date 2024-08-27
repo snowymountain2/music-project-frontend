@@ -1,7 +1,6 @@
 export function TopSongs({ popularTopics }) {
   return (
     <>
-      <h3>Top Songs</h3>
       <ol>
         {popularTopics[0].popularSongsData === undefined
           ? "<li>1</li>"

@@ -52,7 +52,9 @@ export function HomepageSection() {
     <>
       <div className="header-container">
         <div className="header">
-          <div className="logo">Today in Music</div>
+          <div className="logo">
+            <b>Today in Music</b>
+          </div>
           <LocationModal setConcertData={setConcertData} />
         </div>
       </div>
@@ -68,10 +70,13 @@ export function HomepageSection() {
           </div>
           <div className="row-two">
             <div className="top-songs">
+              <div className="blue-header"></div>
+              <h3 className="h3-songs">Top Songs</h3>
               <TopSongs popularTopics={popularTopics} />
             </div>
 
             <div className="trending-topics">
+              <div className="blue-header"></div>
               <h3>Trending Music Topics</h3>
               <ol>
                 {popularTopics[0].popularTopics === undefined

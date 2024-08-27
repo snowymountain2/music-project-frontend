@@ -1,3 +1,7 @@
+body {
+  font-family: lato !important;
+}
+
 .header {
   display: flex;
   font-family: lato !important;
@@ -21,8 +25,12 @@ body {
   font-size: 0.9em;
 }
 
+.row-two h3 {
+  margin-top: 8px;
+}
+
 .blue-header {
-  width: 84px;
+  width: 70px;
   height: 10px;
   background-color: #3061ff;
 }
@@ -90,7 +98,7 @@ body {
 
 .main-container-first-row {
   display: flex;
-  font-family: lato !important;
+  margin-bottom: 20px;
   justify-content: space-evenly;
 }
 .btn {
@@ -125,6 +133,7 @@ body {
 .logo {
   /* padding-right: 300px; */
   flex: none;
+  font-size: 1.1em;
 }
 
 .list-item {
@@ -146,6 +155,10 @@ body {
   /* flex-wrap: wrap; */
   flex-direction: row;
 }
+/* .top-videos {
+  margin-left: 5%;
+  margin-right: 5%;
+} */
 
 .single-video {
   margin: 10px;
@@ -167,8 +180,12 @@ body {
 
 .trending-topics {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   text-align: left;
+  word-wrap: break-word;
+
+  padding-right: 65px;
 
   /* width: 50%; */
 }
@@ -178,6 +195,14 @@ body {
   flex-direction: column;
   align-items: center;
   flex-grow: 2;
+}
+
+.top-albums {
+  width: 250px;
+}
+
+.trending-topics > h3 {
+  margin-bottom: 5px;
 }
 
 .albums {
@@ -263,5 +288,37 @@ body {
     height: 140px;
     margin: 5px;
     color: red;
+  }
+}
+
+@media (max-width: 950px) {
+  .top-videos h3 {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 950px) {
+  h3 {
+    text-align: center !important;
+  }
+}
+@media (max-width: 950px) {
+  .trending-topics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+    word-wrap: break-word;
+    padding-left: 20px;
+
+    padding-right: 20px;
+
+    /* width: 50%; */
+  }
+}
+
+@media (max-width: 950px) {
+  .h3-songs {
+    margin-left: 120px;
   }
 }
