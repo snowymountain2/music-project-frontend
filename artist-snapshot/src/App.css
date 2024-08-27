@@ -6,7 +6,7 @@
   align-items: center;
   height: 40px;
   color: white;
-  column-gap: 420px;
+  column-gap: 720px;
   /* margin-left: 20%;
   margin-right: 20%; */
 }
@@ -123,7 +123,7 @@ body {
 }
 
 .logo {
-  padding-right: 300px;
+  /* padding-right: 300px; */
   flex: none;
 }
 
@@ -155,6 +155,7 @@ body {
   padding: 0px 30px;
   width: 200px !important;
   flex-shrink: 0;
+  text-align: left;
 }
 
 .placeholder {
@@ -167,12 +168,15 @@ body {
 .trending-topics {
   display: flex;
   flex-direction: column;
+  text-align: left;
+
   /* width: 50%; */
 }
 
 .album-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex-grow: 2;
 }
 
@@ -188,6 +192,8 @@ body {
 
 .album-cover {
   padding: 2px 2px;
+  width: 100px;
+  height: 100px;
 }
 
 .concert-list-row {
@@ -247,8 +253,15 @@ body {
     align-items: center;
     height: 40px;
     color: white;
-    column-gap: 0px;
-    margin-left: 20%;
-    margin-right: 20%;
+    column-gap: 150px;
+  }
+}
+
+@media (max-width: 950px) {
+  .album-cover {
+    width: 140px;
+    height: 140px;
+    margin: 5px;
+    color: red;
   }
 }
