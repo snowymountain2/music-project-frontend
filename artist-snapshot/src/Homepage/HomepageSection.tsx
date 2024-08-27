@@ -50,9 +50,11 @@ export function HomepageSection() {
 
   return (
     <>
-      <div className="header">
-        <div className="logo">Today in Music</div>
-        <LocationModal setConcertData={setConcertData} />
+      <div className="header-container">
+        <div className="header">
+          <div className="logo">Today in Music</div>
+          <LocationModal setConcertData={setConcertData} />
+        </div>
       </div>
       <div className="main-container">
         <div className="grid-container">

@@ -6,6 +6,13 @@
   align-items: center;
   height: 40px;
   color: white;
+  column-gap: 420px;
+  /* margin-left: 20%;
+  margin-right: 20%; */
+}
+
+.header-container {
+  background-color: #0f2039;
 }
 
 body {
@@ -117,6 +124,7 @@ body {
 
 .logo {
   padding-right: 300px;
+  flex: none;
 }
 
 .list-item {
@@ -174,6 +182,9 @@ body {
   margin: 5px;
   color: red;
 }
+.concert-btn {
+  flex: none !important;
+}
 
 .album-cover {
   padding: 2px 2px;
@@ -194,7 +205,7 @@ body {
 }
 
 @media (max-width: 950px) {
-  .main-container-first-row {
+  .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,13 +218,37 @@ body {
     width: 400px !important;
     flex-shrink: 0;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
+  }
+}
+@media (max-width: 950px) {
+  .row-two {
+    text-align: center !important;
+    flex-direction: column;
+    justify-content: center !important;
   }
 }
 
 @media (max-width: 950px) {
   .top-songs h2 {
     text-align: center !important;
+    flex-direction: column;
     justify-content: center !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .header {
+    display: flex;
+    font-family: lato !important;
+    background-color: #0f2039;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: white;
+    column-gap: 0px;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
